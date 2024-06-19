@@ -1,38 +1,65 @@
-# Ex-5: Multiclass Classifier
+# Multiclass Classifier
 
-## Overview
-In this exercise, you will implement a multiclass classifier using the concepts learned in previous exercises.
+This repository contains solutions to exercises on implementing a multiclass classifier for the MNIST dataset using PyTorch.
 
-## Objectives
-1. Enhance your understanding of multiclass classification.
-2. Reuse and modify solutions from previous exercises.
-3. Implement and train a multiclass classifier model.
-4. Evaluate the performance of the model.
+## Files
 
-## The Assignment
-You can reuse your solutions for `define_dense_model_single_layer` and `define_dense_model_with_hidden_layer` from Exercise 4. However, you need to fill in the functions `fit_mnist_model` and `evaluate_mnist_model`. Try to experiment with the number of epochs and batch size if the tests do not pass initially.
+1. **`layered_model.py`**: Contains functions to define dense models, train the models for multiclass classification, and evaluate their performance.
 
----
+## Exercise Details
 
-## Validating and Evaluating Your Results
+### Overview
 
-### Online
-1. After committing and pushing your code, check the mark on the top line (near the commit ID).
-2. If some tests are failing, click on the ❌ to open up a popup, which will show details about the errors.
-3. You can click the [Details]() link to see what went wrong. Pay special attention to lines with the words "Failed" or "error".
+In this exercise, you will implement a multiclass classifier using concepts learned from previous exercises. The objectives include enhancing your understanding of multiclass classification, reusing and modifying solutions from Exercise 4, and implementing/train a multiclass classifier model.
+
+### Functions to Implement
+
+1. **`define_dense_model_single_layer`**: Define a dense model with a single layer.
+2. **`define_dense_model_with_hidden_layer`**: Define a dense model with a hidden layer.
+3. **`fit_mnist_model`**: Train the model for multiclass classification.
+4. **`evaluate_mnist_model`**: Evaluate the performance of the trained multiclass classifier.
+
+### Validation and Evaluation
+
+#### Online Platform
+
+After committing and pushing your code:
+1. Check the mark on the top line near the commit ID.
+2. Review detailed test results by clicking on the ❌ to view errors.
+3. Click on the [Details]() link to see specifics about failed tests and score details.
 
 ![screnshot](images/details_screenshot.png)
 
-4. Near the bottom of the [Details]() page, you can see your score. Here are examples of 0/5 and 5/5:
+#### Local Testing
 
-![score](images/score.png) ![success](images/success.png)
+1. Install pytest if not already installed:
+   ```sh
+   pip install pytest
+   ```
+2. Run tests:
+   ```sh
+   pytest
+   ```
 
-5. When you achieve a perfect score, you will see a green checkmark near the commit ID.
+## Usage
 
-![green](images/green.png)
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/samiamjidkhan/multiclass-classifier-mnist.git
+   cd multiclass-classifier-mnist
+   ```
 
-### Locally
-1. You can test your code locally by installing and running `pytest` (`pip install pytest` or `conda install pytest`).
-2. Run the tests using the command `pytest` in your terminal. This will show the status of each test and any errors that occurred.
+2. Implement and test your solutions following the instructions in `layered_model.py`.
 
-Good luck!
+### Running Tests
+
+To validate locally:
+1. Install pytest if not already installed:
+   ```sh
+   pip install pytest
+   ```
+2. Run tests:
+   ```sh
+   pytest
+   ```
+
